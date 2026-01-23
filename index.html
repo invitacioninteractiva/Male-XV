@@ -60,6 +60,8 @@
         }
 
         function onPlayerStateChange(event) {
+            Window.alert("event.data = " + event.data);
+            Window.alert("event.target.ENDED = " + event.target.ENDED);
             if(event.data == event.target.ENDED){
                 event.target.playVideo();
             }
