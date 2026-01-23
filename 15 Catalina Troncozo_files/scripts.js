@@ -74,16 +74,13 @@ function agregarCero(digito) {
 
 var audios = document.getElementById("audioPrueba");
 var playAudio = () => {
-  audios.play().catch((error) => {
-    console.log("La reproducción automática no está permitida. Haz clic en la página para reproducir el audio.");
-    return false;
-  });
+  player.playVideo();
   $("#btnPlay").addClass("hidden");
   $("#btnPausa").removeClass("hidden");
   $("#btnPausa").addClass("pulse");
 };
 var pauseAudio = () => {
-  audios.pause();
+  player.pauseVideo();
   $("#btnPausa").addClass("hidden");
   $("#btnPlay").removeClass("hidden");
   $("#btnPlay").addClass("vertical_shake");
