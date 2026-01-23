@@ -55,9 +55,7 @@
 
         // 4. Define other functions (like event handlers)
         function onPlayerReady(event) {
-            window.alert("entró");
-            player.playVideo(); // Example: start playing automatically
-            window.alert("salió");
+            event.target.playVideo(); // Example: start playing automatically
         }
 
         function onPlayerStateChange(event) {
