@@ -46,9 +46,9 @@
             player = new YT.Player('player', {
                 height: '390',
                 width: '640',
-                videoId: 'uSD4vsh1zDA', // Replace with your video ID
+                videoId: 'pBPHcbBAQOI', // Replace with your video ID
                 events: {
-                    'onReady': onPlayerReady,
+                    //'onReady': onPlayerReady,
                     'onStateChange': onPlayerStateChange
                 }
             });
@@ -60,6 +60,9 @@
         }
 
         function onPlayerStateChange(event) {
+            if(event.data == event.target.ENDED){
+                event.target.playVideo();
+            }
             // Handle state changes (playing, paused, ended, etc.)
         }
     </script>
