@@ -60,9 +60,7 @@
         }
 
         function onPlayerStateChange(event) {
-            alert(event.data);
-            alert(event.target.ENDED);
-            if(event.data == event.target.ENDED){
+            if(event.data == 0){
                 event.target.playVideo();
             }
             // Handle state changes (playing, paused, ended, etc.)
