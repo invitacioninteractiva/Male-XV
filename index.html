@@ -60,7 +60,7 @@
         }
 
         function onPlayerStateChange(event) {
-            if(event.data == 0){
+            if(event.data == YT.PlayerState.ENDED){
                 event.target.playVideo();
             }
             // Handle state changes (playing, paused, ended, etc.)
