@@ -44,8 +44,8 @@
         var player; // Declare player globally if needed elsewhere
         function onYouTubeIframeAPIReady() {
             player = new YT.Player('player', {
-                height: '400',
-                width: '600',
+                height: '1',
+                width: '1',
                 videoId: 'v2AC41dglnM', // Replace with your video ID
                 events: {
                     'onReady': onPlayerReady,
@@ -56,14 +56,7 @@
 
         // 4. Define other functions (like event handlers)
         function onPlayerReady(event) {
-            event.target.mute();
-            event.target.playVideo();    // Example: start playing automatically
-
-
-        setTimeout(function() {
-                event.target.unMute();
-        }, 3000); // 3000 milisegundos = 3 segundos
-
+            //event.target.playVideo();    // Example: start playing automatically
         }
 
         function onPlayerStateChange(event) {
@@ -99,7 +92,7 @@
   <!-- Logo central -->
   <div class="logo-portada fade-in-portada">
     <img class="" src="./15 Catalina Troncozo_files/logo-portada.png" alt="">
-    <div class="scroll-down"></div>
+    <div class="scroll-down" onclick="playAudio()"></div>
   </div>
 
 </section>
