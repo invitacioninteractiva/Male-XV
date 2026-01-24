@@ -56,8 +56,12 @@
 
         // 4. Define other functions (like event handlers)
         function onPlayerReady(event) {
-            setTimeout(3000);
-            event.target.playVideo(); // Example: start playing automatically
+            // Ejecutar algo después de 3 segundos
+            setTimeout(() => {
+                 event.target.playVideo();
+            }, 3000);
+
+             // Example: start playing automatically
         }
 
         function onPlayerStateChange(event) {
