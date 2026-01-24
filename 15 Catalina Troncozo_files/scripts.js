@@ -7,7 +7,7 @@ $(".parallax-instagram").parallax({
 });
 // Portada parallax
 $(".parallax-portada").parallax({
-  imageSrc: "https://agendalafecha.com/invitaciones/recursos/img/nairobi/portada.jpg",
+  imageSrc: "./15 Catalina Troncozo_files/portada.jpg",
 });
 
 // ----------------------
