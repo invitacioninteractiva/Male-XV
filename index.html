@@ -44,8 +44,8 @@
         var player; // Declare player globally if needed elsewhere
         function onYouTubeIframeAPIReady() {
             player = new YT.Player('player', {
-                height: '1',
-                width: '1',
+                height: '400',
+                width: '600',
                 videoId: 'v2AC41dglnM', // Replace with your video ID
                 events: {
                     'onReady': onPlayerReady,
@@ -58,13 +58,12 @@
         function onPlayerReady(event) {
             event.target.mute();
             event.target.playVideo();    // Example: start playing automatically
- //           event.target.unMute();
+            event.target.unMute();
         }
 
         function onPlayerStateChange(event) {
             if(event.data == YT.PlayerState.ENDED){
                 event.target.playVideo();
-                event.target.
             }
             // Handle state changes (playing, paused, ended, etc.)
         }
