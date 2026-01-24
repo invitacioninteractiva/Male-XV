@@ -288,8 +288,8 @@ a:hover{
 	text-shadow: 0;
   width: 30px;
   height: 30px;
-  border-bottom: 5px solid var(--color-primario);;
-  border-right: 5px solid var(--color-primario);;
+  border-bottom: 4px solid var(--color-primario);;
+  border-right: 4px solid var(--color-primario);;
   z-index: 9;
   left: calc(50% - 15px);
   -webkit-transform: translate(-50%, 0%) rotate(45deg);
@@ -297,7 +297,7 @@ a:hover{
   transform: translate(-50%, 0%) rotate(45deg);
 	-webkit-animation: fade_move_down 2s ease-in-out infinite;
 	-moz-animation:    fade_move_down 2s ease-in-out infinite;
-	animation:         fade_move_down 2s ease-in-out infinite;
+	animation:         fade_move_down 2.5s infinite;
 }
 
 
