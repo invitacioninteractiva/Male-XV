@@ -58,7 +58,12 @@
         function onPlayerReady(event) {
             event.target.mute();
             event.target.playVideo();    // Example: start playing automatically
-            //event.target.unMute();
+
+
+        setTimeout(function() {
+                setTimeevent.target.unMute();
+        }, 3000); // 3000 milisegundos = 3 segundos
+
         }
 
         function onPlayerStateChange(event) {
