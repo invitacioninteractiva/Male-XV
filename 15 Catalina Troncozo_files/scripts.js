@@ -52,7 +52,7 @@ var x = setInterval(function () {
   document.getElementById("min").innerHTML = agregarCero(minutes);
   document.getElementById("seg").innerHTML = agregarCero(seconds);
   // If the count down is finished, write some text
-  if (distance < 0) {
+  if (days <= 0 && hours <= 9 && minutes < 30) {
     clearInterval(x);
     // document.getElementById("reloj").innerHTML = "¡Hoy es el gran día!";
     $("#reloj").removeClass("descartar");
@@ -83,7 +83,7 @@ var pauseAudio = () => {
   player.pauseVideo();
   $("#btnPausa").addClass("hidden");
   $("#btnPlay").removeClass("hidden");
-  $("#btnPlay").addClass("vertical_shake");
+  $("#btnPlay").addClass("pulse");
 };
 
 // ----------------------
