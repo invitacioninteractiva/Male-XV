@@ -25,6 +25,19 @@
 <title>
   15 Malena Bocco Garnero</title>
 
+    <!-- distinguir si es pc o mobile -->
+<script>
+        let navegador = navigator.userAgent;
+        if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
+            console.log("Estás usando un dispositivo móvil!!");
+        } else {
+            document.getElementById("seccionPortadaMovil").style.display = "none";
+            document.getElementById("seccionPortadaPC").style.display = "block";
+            console.log("No estás usando un móvil");
+        }
+</script>
+
+    
 </head>
 <body>
   <div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; height: 678px; width: 1351px;"><img class="parallax-slider" src="./15 Catalina Troncozo_files/portada.jpg" style="position: absolute; height: 759px; width: 1351px; max-width: none;"></div>
@@ -82,12 +95,24 @@
 
     <!-- Portada -->
     <!-- Portada -->
-<section class="portada parallax-portada d-flex justify-content-center align-items-center">
-
-  <!-- Logo central -->
+// Hacer las 2 secciones completas una como sería para movil y otra para pc, la de PC q no se muestre por defecto
+// luego con javascript veo si no es un móvil, se pone invisible la parte de movil y se hace visible la parte de PC
+<section id="seccionPortadaMovil" class="portada parallax-portada d-flex justify-content-center align-items-center" style="background-image: url(&quot;./15 Catalina Troncozo_files/portada.jpg&quot;); background-size: cover; background-position: center center;">
+  
+    <!-- Logo central -->
   <div class="logo-portada fade-in-portada">
     <img class="" src="./15 Catalina Troncozo_files/logo-portada.png" alt="">
-    <div class="scroll-down" onclick="playAudio()"></div>
+    <div class="scroll-down"></div>
+  </div>
+
+</section>
+
+<section id="seccionPortadaPC" class="portada parallax-portada d-flex justify-content-center align-items-center" style="display: none;">
+  
+    <!-- Logo central -->
+  <div class="logo-portada fade-in-portada">
+    <img class="" src="./15 Catalina Troncozo_files/logo-portada.png" alt="">
+    <div class="scroll-down"></div>
   </div>
 
 </section>
