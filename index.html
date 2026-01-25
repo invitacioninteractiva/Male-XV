@@ -27,8 +27,6 @@
 
 </head>
 <body>
-<!--  <div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; height: 678px; width: 1351px;"><img class="parallax-slider" src="./15 Catalina Troncozo_files/portada.jpg" style="position: absolute; height: 759px; width: 1351px; max-width: none;"></div>
--->
        <!-- 1. The <div> where the player will be inserted -->
     <div id="player" style="display:none;"></div>
 
@@ -71,9 +69,9 @@
         <div class="row">
             <div class="botonAudio-container">
                 <div class="animation">
-                    <img id="btnPlay" src="./15 Catalina Troncozo_files/icono-musica_play.svg" alt="boton play" onclick="playAudio();document.getElementById('seccionPortadaMovil').style.display = 'none';" class="botonAudio pulse">
+                    <img id="btnPlay" src="./15 Catalina Troncozo_files/icono-musica_play.svg" alt="boton play" onclick="playAudio();" class="botonAudio pulse">
 
-                    <img id="btnPausa" src="./15 Catalina Troncozo_files/icono-musica_pausa.svg" class="botonAudio hidden" onclick="pauseAudio();document.getElementById('seccionPortadaMovil').style.display = 'none';" alt="boton pausa">
+                    <img id="btnPausa" src="./15 Catalina Troncozo_files/icono-musica_pausa.svg" class="botonAudio hidden" onclick="pauseAudio();" alt="boton pausa">
                 </div>
             </div>
         </div>
@@ -96,7 +94,7 @@
 
 </section>
 
-<section id="seccionPortadaPC" class="portada parallax-portada d-flex justify-content-center align-items-center" style="display: none;">
+<section id="seccionPortadaPC" class="portada d-flex justify-content-center align-items-center" style="display: none;">
   
     <!-- Logo central -->
   <div class="logo-portada fade-in-portada">
@@ -287,7 +285,7 @@ Clickeá en el botón de abajo y encontrá las indicaciones para llegar,<br>
 
 
         <!-- Instagram -->
-    <section class="parallax-instagram instagram d-flex justify-content-center align-items-center">
+    <section class="instagram d-flex justify-content-center align-items-center">
 
 
   <div class="contenido">
@@ -423,7 +421,7 @@ pero si deseás regalarme algo, podés colaborar con mis sueños y anhelos✨<br
             console.log("Estás usando un dispositivo móvil!!");
         } else {
             document.getElementById("seccionPortadaMovil").style.display = "none";
-//            document.getElementById("seccionPortadaPC").style.display = "block";
+            document.getElementById("seccionPortadaPC").style.display = "block";
             console.log("No estás usando un móvil");
         }
 </script>
