@@ -329,7 +329,7 @@ a:hover{
 
   animation: bounce-in 2s ease infinite;
 
-  width: 80px;
+  width: 50px;
 
 }
 
@@ -399,7 +399,7 @@ section.cuenta-regresiva{
   text-align: center;
   padding-top: 40px;
   background-color:var(--color-secundario);
-  height: 400px;
+  height: 500px;
 }
 
 section.cuenta-regresiva p{
