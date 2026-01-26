@@ -1,9 +1,9 @@
 /* Generales */
 
 :root {
-  --color-primario: #718d72;
+  --color-primario: #1b1b59;
 
-  --color-secundario: #ddc190;
+  --color-secundario: #99752f;
 }
 
 body{
@@ -31,7 +31,7 @@ h4
   font-family: 'Montserrat', sans-serif;
   color: white;
   background-color: var(--color-primario);
-  border-radius: 30px;
+  border-radius: 0px;
   padding: 10px 40px;
   border: 1px solid var(--color-primario);
   text-transform: uppercase;
@@ -298,6 +298,7 @@ a:hover{
 	-webkit-animation: fade_move_down 2s ease-in-out infinite;
 	-moz-animation:    fade_move_down 2s ease-in-out infinite;
 	animation:         fade_move_down 2.5s infinite;
+	
 }
 
 
@@ -328,7 +329,7 @@ a:hover{
 
   animation: bounce-in 2s ease infinite;
 
-  width: 150px;
+  width: 80px;
 
 }
 
@@ -398,13 +399,19 @@ section.cuenta-regresiva{
   text-align: center;
   padding-top: 40px;
   background-color:var(--color-secundario);
-  height: 210px;
+  height: 360px;
 }
 
 section.cuenta-regresiva p{
    color: white; 
 margin-top: 0px;
-} 
+}
+
+section.cuenta-regresiva h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
 
 /* Clase de los numero de la cuenta regresiva (00:00:00) */
 .num_cuenta{
@@ -459,6 +466,7 @@ section.ceremonia-fiesta .columna h4{
   margin-bottom: 20px;
   text-transform: uppercase;
 }
+
 
 section.ceremonia-fiesta .columna p{
   margin-bottom: 25px;
@@ -611,12 +619,12 @@ section.confirmar-asistencia img.iconLink{
 /* DRESS CODE */
 
 section.dresscode{
-  z-index: 1;
+  z-index: -1;
   display: flex;
   position: relative;
   text-align: center;
   padding: 70px 0 70px;
-  background-color: var(--color-secundario);
+  background-color: var(--color-primario);
 }
 
 section.dresscode h4 {
@@ -965,11 +973,11 @@ section.contacto ul li i{
      }
 
   section.ceremonia-fiesta .row .columna:nth-child(2){
-    margin-top: 0px;
+    margin-top: 100px;
   }
 
   section.ceremonia-fiesta .row .columna.no-margin-top{
-    margin-top: 0;
+    margin-top: 100px;
   }
 
   section.menu-footer ul li{
