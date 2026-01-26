@@ -444,6 +444,12 @@ section.cuenta-regresiva h4 {
 
 }
 
+.bordes-numeros-timer {
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  border-radius: 10px;
+}
 
 
 /* ------------- Fin Cuenta Regresiva -----------*/
