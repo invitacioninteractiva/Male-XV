@@ -83,7 +83,7 @@ var pauseAudio = () => {
   player.pauseVideo();
   $("#btnPausa").addClass("hidden");
   $("#btnPlay").removeClass("hidden");
-  $("#btnPlay").addClass("pulse");
+  $("#btnPlay").addClass("vertical-shake");
 };
 
 // ----------------------
