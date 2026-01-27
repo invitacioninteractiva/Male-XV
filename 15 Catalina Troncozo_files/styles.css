@@ -547,6 +547,7 @@ section.cbu p{
 #hidden-cbu{
   padding: 25px;
   border-radius: 0px;
+  border: solid, var(--color-secundario),2px;
 }
 
 
@@ -556,23 +557,47 @@ section.cbu p{
   text-align: center;
   width: 100%;
   font-size: 25px;
-  color: var(--color-primario);
+  color: var(--color-secundario);
+  text-decoration: underline;
 }
 
 
 #hidden-cbu ul{
   list-style: none;
-  text-align: center;
-  margin: 0;
+  text-align: left;
+  margin-left: 20px;
   padding: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
+#hidden-cbu ul li{
+  margin-bottom: 8px;
+
+}
+
+#hidden-cbu ul li.mensaje{
+  font-size: 12px;
+  text-align: center;
+  color: green;
+  margin-bottom: 0px;
+}
 
 #hidden-cbu ul li a{
-  color: var(--color-primario);
+  color: var(--color-secundario);
   text-decoration: underline;
 
+}
+
+/* CSS for the toast */
+
+.toast-success {
+    display: none; /* Hidden by default */
+}
+
+.toast-success.show {
+    display: block; /* Show the toast */
+ 
 }
 
 /* ---------- */
