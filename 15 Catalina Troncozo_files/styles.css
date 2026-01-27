@@ -382,6 +382,8 @@ section.audio {
 
   position: fixed;
 
+z-index: 100;
+
 }
 
 section.audio .columna {
