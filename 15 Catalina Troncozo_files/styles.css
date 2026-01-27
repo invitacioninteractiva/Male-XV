@@ -32,27 +32,27 @@ h4
 .btn{
   font-family: 'Montserrat', sans-serif;
   color: white;
-  background-color: var(--color-primario);
+  background-color: var(--color-secundario);
   border-radius: 0px;
   padding: 10px 40px;
-  border: 1px solid var(--color-primario);
+  border: 1px solid var(--color-secundario);
   text-transform: uppercase;
 }
 
 .btn:hover{
-  color:var(--color-primario);
+  color:var(--color-secundario);
   background-color: white;
 }
 
 .btn-alt{
   font-family: 'Montserrat', sans-serif;
-  color: var(--color-primario);
+  color: var(--color-secundario);
   background-color: white;
 }
 
 .btn-alt:hover{
   color: white;
-  background-color: var(--color-primario);
+  background-color: var(--color-secundario);
   border: 1px solid white;
 }
 
