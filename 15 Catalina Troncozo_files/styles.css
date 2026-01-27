@@ -1,9 +1,11 @@
 /* Generales */
 
 :root {
-  --color-primario: #1b1b59;
+/* --color-primario: #1b1b59;  */
+  --color-primario: #F5F0Fa;
 
-  --color-secundario: #99752f;
+ /* --color-secundario: #99752f; */
+   --color-secundario: #76644A;
 }
 
 body{
