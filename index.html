@@ -46,6 +46,26 @@
     window.addEventListener('load', () => {
 		startAutoPlayer();
     });
+
+		function showSuccessToast() {
+    var x = document.getElementById("snackbar");
+   
+    x.className = "mensaje toast-success show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 2000); // Hide after 3 seconds
+	}
+
+	
+	function copiarAliasPortapapeles() {
+		const alias = "male.bocco.mp";
+
+		navigator.clipboard.writeText(alias).then(() => {
+			showSuccessToast();
+		}).catch(err => {
+			console.error('Error al copiar: ', err);
+		});
+	}
+
+	
 </script>
 
 
@@ -321,33 +341,44 @@ Seguime en mi cuenta de Instagram y etiquetame en tus fotos y videos.</p>
   </div>
 
 </section>
-    <!-- CBU -->
+
+	
+<!-- CBU -->
     
-<section class="cbu">
+ <section class="cbu">
 
     <div class="container">
 
-      <img src="./15 Catalina Troncozo_files/icono-regalo.svg" alt="" class="bounce-in">
+      <img src="./15 Catalina Troncozo_files/icono-regalo.svg" alt="" class="bounce-in" id="img1">
       <div class="animated divCbu fadeInUp">
         <p>El mejor regalo es que vengas,<br>
 pero si deseás regalarme algo, podés colaborar con mis sueños y anhelos✨<br>
 ¡Muchas gracias!</p>
         <a data-fancybox="" data-src="#hidden-cbu" href="javascript:;" data-options="{&quot;touch&quot; : false}" class="btn btn-alt">Ver Info</a>
 
-<!-- Datos Cbu -->
-<div style="display: none;" id="hidden-cbu">
-<span class="title">Datos de mi cuenta</span>
-	<img src="./15 Catalina Troncozo_files/icono-musica_pausa.png">
+        <!-- Datos Cbu -->
+  <div style="display: none;" id="hidden-cbu">
+
+          
+  <div><img src="./15 Catalina Troncozo_files/icono-musica_pausa.svg" style="display: flex; margin:auto;width:40px;height:40px;"></div>
+<!--   <span class="title">Mi Cuenta</span>   -->
 
 <ul>
-  <li>Alias: male.bocco.mp</li>
-</ul>
-</div>
-		  
-</div>
-</div>
-  </section>
+  <li>Cuenta Mercado Pago</li>
+  <li><u>Titular</u>: Malena Bocco Garnero</li>
+  <li><u>Alias</u>: male.bocco.mp  <img src="./15 Catalina Troncozo_files/icono-musica_pausa.svg" style="margin-left:10px; width:20px;height:20px;cursor:pointer;" title="Copiar" alt="copiar alias" onclick="copiarAliasPortapapeles();"></li>
+  <li id="snackbar" class="mensaje toast-success">Copiado!!!</li>
+ </ul> 
 
+
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
 
 
 
