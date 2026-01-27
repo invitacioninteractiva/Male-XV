@@ -910,21 +910,21 @@ section.contacto ul li i{
 }
 
 .botonAudioPlay {
-  width: 8rem;
-  padding: 10px 20px;
-  margin: 2px;
+  width: 7rem;
+  padding: 0px 0px;
+  margin: 0px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   position: fixed;
   display: flex;
-  right: 1rem;
+  right: 0rem;
 }
 
 .botonAudioPause {
   width: 5rem;
-  padding: 10px 20px;
-  margin: 20px;
+  padding: 30px 20px;
+  margin: 0px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
