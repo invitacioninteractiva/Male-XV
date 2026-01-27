@@ -909,10 +909,22 @@ section.contacto ul li i{
   text-align: center;
 }
 
-.botonAudio {
-  width: 6rem;
+.botonAudioPlay {
+  width: 8rem;
   padding: 10px 20px;
-  margin: 10px;
+  margin: 2px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  right: 1rem;
+}
+
+.botonAudioPause {
+  width: 5rem;
+  padding: 10px 20px;
+  margin: 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
