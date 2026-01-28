@@ -404,11 +404,12 @@ section.cuenta-regresiva{
   padding-top: 40px;
   background-color:var(--color-secundario);
   height: 360px;
+  color: white;
 }
 
 section.cuenta-regresiva p{
    color: white; 
-margin-top: 0px;
+   margin-top: 0px;
 }
 
 section.cuenta-regresiva h4 {
@@ -439,13 +440,11 @@ section.cuenta-regresiva h4 {
   text-align: center;
   font-size: 25px;
   margin-bottom: 0px;
- 
 }
 
 .descartar{
-  display: none;
+  visibility: hidden;
   margin-bottom: 0px;
-
 }
 
 .bordes-numeros-timer {
