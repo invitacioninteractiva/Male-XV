@@ -52,12 +52,19 @@ var x = setInterval(function () {
   document.getElementById("min").innerHTML = agregarCero(minutes);
   document.getElementById("seg").innerHTML = agregarCero(seconds);
   // If the count down is finished, write some text
-  if (days <= 0 && hours <= 9 && minutes < 30) {
+ // if (distance <0) {
+	 if(days <= 0 && hours < 21 || (hours == 21 && minutes <= 30)){
     clearInterval(x);
-    // document.getElementById("reloj").innerHTML = "¡Hoy es el gran día!";
+	if (distance <0) {
+		document.getElementById("dias").innerHTML = agregarCero(0);
+		document.getElementById("horas").innerHTML = agregarCero(0);
+		document.getElementById("min").innerHTML = agregarCero(0);
+		document.getElementById("seg").innerHTML = agregarCero(0);
+	}
+    document.getElementById("reloj").innerHTML = "¡Hoy es el gran día!";
     $("#reloj").removeClass("descartar");
-    $("#reloj").prev("p").html("¡Es hoy!");
-    $("#reloj_number").addClass("hidden");
+    //$("#reloj").prev("p").html("¡Hoy es el gran día!");
+    //$("#reloj_number").addClass("hidden");
   }
 }, 1000);
 
