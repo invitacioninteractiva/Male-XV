@@ -54,8 +54,8 @@ var x = setInterval(function () {
   // If the count down is finished, write some text
  // if (distance <0) {
 	 if(days <= 0 && hours < 21 || (hours == 21 && minutes <= 30)){
-    clearInterval(x);
 	if (distance <0) {
+		clearInterval(x);
 		document.getElementById("dias").innerHTML = agregarCero(0);
 		document.getElementById("horas").innerHTML = agregarCero(0);
 		document.getElementById("min").innerHTML = agregarCero(0);
