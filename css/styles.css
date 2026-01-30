@@ -851,7 +851,8 @@ section.gracias p{
 /* FOOTER */
 
 section.menu-footer{
-  background: #e6e6e6;
+ /* background: #e6e6e6;  */
+  background: black;
   padding: 30px 0;
 }
 
