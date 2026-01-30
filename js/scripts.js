@@ -7,7 +7,7 @@ $(".parallax-instagram").parallax({
 });
 // Portada parallax
 $(".parallax-portada").parallax({
-  imageSrc: "./img/portada.jpg",
+  imageSrc: "./img/portada.png",
 });
 
 // ----------------------
