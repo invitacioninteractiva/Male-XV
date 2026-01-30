@@ -7,46 +7,41 @@
     <!-- Required meta tags -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="invitaciones digitales para eventos">
-<meta name="keywords" content="invitaciones, digitales, tarjetas, boda, invitación, interactivas, casamiento, save the date, agenda la fecha, ideas invitación, tarjetas de 15, tarjetas eventos, wedding, matrimonio, ideas tarjetas, rsvp, modelos de invitacion, página de boda, página web de casamiento">
-
-	<!-- Slider -->
-<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" data-noinit defer></script>
-<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
 
 <!-- Listado de css con version dinamica segun modificacion de archivo -->
-<link rel="stylesheet" href="./15 Catalina Troncozo_files/bootstrap.min.css">
-<link rel="stylesheet" href="./15 Catalina Troncozo_files/jquery.fancybox.min.css">
-<link rel="stylesheet" href="./15 Catalina Troncozo_files/styles.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="./css/styles.css">
 <!-- Font -->
-<link href="./15 Catalina Troncozo_files/css2.css" rel="stylesheet">
-
-
+<link href="./css/css2.css" rel="stylesheet">
 <!-- Font Awesome -->
-<link href="./15 Catalina Troncozo_files/all.min.css" rel="stylesheet">
+<link href="./css/all.min.css" rel="stylesheet">
 
 
 <script>
-	 //Variable for keeping the timer instance that runs the autoplayer
-                var autoPlayerTimer;
 
-                //Start playing with the specified interval
-                function startAutoPlayer() {
-                    var timeout = 3000; //ms
-                    var autopause = true; //has to be false
-                    //A .swiffy-slider instance with the id 'swiffy-animation'
-                    var sliderElement = document.getElementById("swiffy-animation");
+	//player audio
+	
+	 	//Variable for keeping the timer instance that runs the autoplayer
+        var autoPlayerTimer;
 
-                    //const autoPlayer = () => swiffyslider.autoPlay(sliderElement, timeout, autopause);
-                    autoPlayerTimer = swiffyslider.autoPlay(sliderElement, timeout, autopause);
-                    console.log("Player started");
-                }
-				
+        //Start playing with the specified interval
+        function startAutoPlayer() {
+            var timeout = 3000; //ms
+            var autopause = true; //has to be false
+            //A .swiffy-slider instance with the id 'swiffy-animation'
+            var sliderElement = document.getElementById("swiffy-animation");
 
+            autoPlayerTimer = swiffyslider.autoPlay(sliderElement, timeout, autopause);
+            console.log("Player started");
+        }
 	
     window.addEventListener('load', () => {
 		startAutoPlayer();
     });
 
+
+	//mostrar mensaje copiado
 		function showSuccessToast() {
     var x = document.getElementById("snackbar");
    
@@ -76,7 +71,7 @@
 
 </head>
 <body>
-       <!-- 1. The <div> where the player will be inserted -->
+    <!-- 1. The <div> where the player will be inserted -->
     <div id="player" style="display:none;"></div>
 
     <script>
@@ -112,15 +107,17 @@
             // Handle state changes (playing, paused, ended, etc.)
         }
     </script>
+
+	
     <!-- Audio -->    
 <section class="audio">
     <div class="container">
         <div class="row">
             <div class="botonAudio-container">
                 <div class="animation">
-                    <img id="btnPlay" src="./15 Catalina Troncozo_files/icono-musica_play.gif" alt="boton play" onclick="playAudio()" class="botonAudioPlay vertical_shake">
+                    <img id="btnPlay" src="./img/icono-musica_play.gif" alt="boton play" onclick="playAudio()" class="botonAudioPlay vertical_shake">
 
-                    <img id="btnPausa" src="./15 Catalina Troncozo_files/icono-musica_pausa.png" class="botonAudioPause hidden" onclick="pauseAudio()" alt="boton pausa">
+                    <img id="btnPausa" src="./img/icono-musica_pausa.png" class="botonAudioPause hidden" onclick="pauseAudio()" alt="boton pausa">
                 </div>
             </div>
         </div>
@@ -129,20 +126,17 @@
 
     <!-- Portada -->
     <!-- Portada -->
-  <!-- Hacer las 2 secciones completas una como sería para movil y otra para pc, la de PC q no se muestre por defecto
- luego con javascript veo si no es un móvil, se pone invisible la parte de movil y se hace visible la parte de PC 
-    -->
-<section class="portada d-flex justify-content-center align-items-center" style="background-image: url(&quot;./15 Catalina Troncozo_files/portada.png&quot;); background-size: cover; background-position: center center;">
+
+<section class="portada d-flex justify-content-center align-items-center" style="background-image: url(&quot;./img/portada.png&quot;); background-size: cover; background-position: center center;">
   
     <!-- Logo central -->
   <div class="logo-portada fade-in-portada">
-    <img class="" src="./15 Catalina Troncozo_files/logo-portada.png" alt="">
+    <img class="" src="./img/logo-portada.png" alt="">
     <div class="scroll-down"></div>
   </div>
 
 </section>
 
-</section>
 
     <!-- Cuenta Regresiva -->
 <section class="cuenta-regresiva" id="cuenta-regresiva" style="height: 360px; margin-top">
@@ -150,11 +144,11 @@
     <!-- Contenedor de cuenta regresiva -->
   
 
-<h4>COUNTDOWN</h4>
+	<h4>COUNTDOWN</h4>
     <!-- Contenedor de cuenta regresiva -->
                 <!-- Icono -->
         <div class="col-md-12 columna">
-          <img src="./15 Catalina Troncozo_files/icono-timer.svg" alt="" class="bounce-in pulse">
+          <img src="./img/icono-timer.svg" alt="" class="bounce-in pulse">
        
       <p id="reloj" class="descartar" style="margin-top:25px;">"¡Hoy es el gran día!</p>
 			
@@ -184,45 +178,29 @@
 </section>
 
 
-    <!-- Ceremonia y Fiesta -->
-    <section class="ceremonia-fiesta mb-5">
+<!-- Ceremonia y Fiesta -->
+<section class="ceremonia-fiesta mb-5">
   <div class="container" style="justify-content: center; gap: 0px; margin-top: 15px">
-
-
-<div class="row">
+	<div class="row">
 
               <!-- Icono -->
         <div class="col-md-12 columna">
 			<h4>DIA y HORA</h4>
-          <img src="./15 Catalina Troncozo_files/icono-calendario.png" alt="" class="bounce-in pulse">
+            <img src="./img/icono-calendario.png" alt="" class="bounce-in pulse">
 			<!-- Texto -->
-			  <div class="col-md-12 columna">
+			<div class="col-md-12 columna">
 			Jueves 2 de Abril de 2026<br>
 			21:30 hs. <br>
 			 </div>
-			    <div class="col-md-12 columna" style="margin-top:40px">
-          <img src="./15 Catalina Troncozo_files/divisor.png">
-    </div>    
-        </div>
-<!-- boton agendar -->
-	<!--
-        <div class="col-md-12 columna  divFiesta animated fadeInUp">
-			
-			 <a target="_blank" href="https://maps.app.goo.gl/6wkDXhPpFqhDDkL98" class="btn" style="visibility: hidden">AGENDAR</a>
-        </div>
-	
-	
-    <div class="col-md-12 columna" style="border:green,solid,1px">
-          <img src="./15 Catalina Troncozo_files/divisor.png">
-    </div>              
--->
-<!--    </div>
-	  <div class="row" style="margin-top: 15;border:blue,solid,1px""> -->
+			<div class="col-md-12 columna" style="margin-top:40px">
+          			<img src="./img/divisor.png">
+   			</div>    
+       	 </div>
 
               <!-- Icono -->
         <div class="col-md-12 columna"  style="margin-top:0px">
 		<h4>LUGAR</h4>
-          <img src="./15 Catalina Troncozo_files/icono-lugar.png" alt="" class="bounce-in pulse">
+          <img src="./img/icono-lugar.png" alt="" class="bounce-in pulse">
 		   		<!-- Texto -->
         	<div class="col-md-12 columna">
 			Alto Botánico
@@ -238,42 +216,16 @@
   </div>
 </section>
 
-	
 
-    <!-- Galeria -->
-<!-- 
-    <section class="galeria" style="padding-top: 45px; background-image: url(&quot;./15 Catalina Troncozo_files/portada.jpg&quot;); background-size: cover; background-position: center center;display: flex, justify-content: center, align-items: center;">
- 
-	    <h4>ALGUNOS MOMENTOS INOLVIDABLES...</h4>
-		
-	<div class="container" style="max-width:90%; margin-left: auto;margin-right: auto;margin: 0 auto;">
-		
-	<div class="swiffy-slider" id="swiffy-animation">
-    <ul class="slider-container">
-        <li><img src="./15 Catalina Troncozo_files/1.png" style="max-width: 100%;height: auto;border-radius: 5%;"></li>
-        <li><img src="./15 Catalina Troncozo_files/2.png" style="max-width: 100%;height: auto;border-radius: 5%;"></li>
-        <li><img src="./15 Catalina Troncozo_files/3.png" style="max-width: 100%;height: auto;border-radius: 5%;"></li>
-    </ul>
-
-</div>
-   
-   
-  </div>
-</section>
-	  
-  </div>
-</section>
-
--->
 	
 
 	<!-- Dress Code -->
 	
-<section class="dresscode" style="background-image: url(&quot;./15 Catalina Troncozo_files/fondo-azul-tela.png&quot;); background-size: cover; background-position: center center;">
+<section class="dresscode" style="background-image: url(&quot;./img/fondo-azul-tela.png&quot;); background-size: cover; background-position: center center;">
 
   <div class="container animated divDressCode fadeInUp">
 	<h4>DRESS CODE</h4>
-    <img src="./15 Catalina Troncozo_files/icono-dresscode.png" alt="" class="bounce-in pulse">
+    <img src="./img/icono-dresscode.png" alt="" class="bounce-in pulse">
 
     	   <div class="col-md-12 columna  divFiesta animated fadeInUp">
 		   <br><br>
@@ -305,14 +257,14 @@
 
 	
     <!-- Canciones -->
-    <section class="canciones" style="background-image: url(&quot;./15 Catalina Troncozo_files/portada.jpg&quot;); background-size: cover; background-position: center center;">
+    <section class="canciones" style="background-image: url(&quot;./img/portada.jpg&quot;); background-size: cover; background-position: center center;">
 
   <div class="container">
  
     <div class="animated divCanciones fadeInUp">
       <h4>¡ARMEMOS JUNTOS LA PLAYLIST!</h4>
 
-		 <img src="./15 Catalina Troncozo_files/icono-playlist.png" alt="" class="bounce-in pulse">
+		 <img src="./img/icono-playlist.png" alt="" class="bounce-in pulse">
 			
       <p style="margin-top: 30px">Contame que canciones te gustaría escuchar en la fiesta.<BR><br></p>
 		
@@ -328,7 +280,7 @@
 
   <div class="contenido">
 
-   <img src="./15 Catalina Troncozo_files/icono-instagram.svg" alt="" class="bounce-in pulse">
+   <img src="./img/icono-instagram.svg" alt="" class="bounce-in pulse">
 
     <br>
     <div class="animated divIntagram fadeInUp">
@@ -350,7 +302,7 @@
 
     <div class="container">
 
-      <img src="./15 Catalina Troncozo_files/icono-regalo.png" alt="" class="bounce-in pulse">
+      <img src="./img/icono-regalo.png" alt="" class="bounce-in pulse">
       <div class="animated divCbu fadeInUp">
         <p style="margin-top: 30px">Si deseás hacerme un obsequio, aquí puedes encontrar la info.<br>
 		¡Muchas gracias!</p>
@@ -360,28 +312,21 @@
   <div style="display: none;" id="hidden-cbu">
 
           
-  <div><img src="./15 Catalina Troncozo_files/icono-cuenta-banco.svg" style="display: flex; margin:auto;width:40px;height:40px;"></div>
+  <div><img src="./img/icono-cuenta-banco.svg" style="display: flex; margin:auto;width:40px;height:40px;"></div>
 <!--   <span class="title">Info de mi Cuenta</span>   -->
 
 <ul>
   <li>Cuenta Mercado Pago</li>
   <li><u>Titular</u>: Malena Bocco Garnero</li>
-  <li><u>Alias</u>: male.bocco.mp  <img src="./15 Catalina Troncozo_files/icono-copiar.png" style="margin-left:10px; width:20px;height:20px;cursor:pointer;" title="Copiar alias" alt="copiar alias" onclick="copiarAliasPortapapeles();"></li>
+  <li><u>Alias</u>: male.bocco.mp  <img src="./img/icono-copiar.png" style="margin-left:10px; width:20px;height:20px;cursor:pointer;" title="Copiar alias" alt="copiar alias" onclick="copiarAliasPortapapeles();"></li>
   <li id="snackbar" class="mensaje toast-success">Copiado!!!</li>
  </ul> 
-
-
-
         </div>
       </div>
-
-
     </div>
-
   </section>
 
-
-
+	
 
     <!-- Gracias -->
     <section class="gracias">
@@ -415,20 +360,15 @@
     <script>
     // Cuenta regresiva
     var fechaCuentaRegresiva = "04/02/2026 21:30:00";
-
-    // Datos para Agenda
-    var fechaInicioEvento = "11/25/2024 21:00:00";
-    var fechaFinEvento = "11/26/2024 04:00:00";
-    var tituloEvento = "Fiesta de 15";
-    </script>
+   </script>
 
 
     <!-- Scripts Generales-->
     <!-- Listado de js con version dinamica segun modificacion de archivo -->
-<script type="text/javascript" src="./15 Catalina Troncozo_files/jquery-3.5.1.slim.min.js"></script><script type="text/javascript" src="./15 Catalina Troncozo_files/popper.min.js"></script><script type="text/javascript" src="./15 Catalina Troncozo_files/bootstrap.min.js"></script><script type="text/javascript" src="./15 Catalina Troncozo_files/parallax.min.js"></script><script type="text/javascript" src="./15 Catalina Troncozo_files/jquery.fancybox.min.js"></script><script type="text/javascript" src="./15 Catalina Troncozo_files/scripts.js"></script>
+<script type="text/javascript" src="./js/jquery-3.5.1.slim.min.js"></script><script type="text/javascript" src="./js/popper.min.js"></script><script type="text/javascript" src="./js/bootstrap.min.js"></script><script type="text/javascript" src="./js/parallax.min.js"></script><script type="text/javascript" src="./js/jquery.fancybox.min.js"></script><script type="text/javascript" src="./js/scripts.js"></script>
 
 
 
-<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpbh-mt'},{'server':'p3plmcpnl504514'},{'dcenter':'p3'},{'cp_id':'3446280'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src="./15 Catalina Troncozo_files/tccl.min.js"></script></body></html>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpbh-mt'},{'server':'p3plmcpnl504514'},{'dcenter':'p3'},{'cp_id':'3446280'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src="./js/tccl.min.js"></script></body></html>
 </body>
 </html>
