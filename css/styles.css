@@ -851,8 +851,7 @@ section.gracias p{
 /* FOOTER */
 
 section.menu-footer{
- /* background: #e6e6e6;  */
-  background: black;
+ background: #e6e6e6; 
   padding: 30px 0;
 }
 
@@ -875,13 +874,13 @@ section.menu-footer ul a:hover{
 section.footer{
   text-align: center;
   padding: 20px 0;
-  background-color: #666;
+  background-color: #54524f;
 }
 
 section.footer p{
   text-align: center;
   color: white;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 300;
   margin: 0;
   padding: 0;
