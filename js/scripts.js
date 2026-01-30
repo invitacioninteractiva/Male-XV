@@ -2,12 +2,12 @@
 
 $(".parallax-instagram").parallax({
 
-  imageSrc: "./15 Catalina Troncozo_files/portada.jpg",
+  imageSrc: "./img/portada.jpg",
 
 });
 // Portada parallax
 $(".parallax-portada").parallax({
-  imageSrc: "./15 Catalina Troncozo_files/portada.jpg",
+  imageSrc: "./img/portada.jpg",
 });
 
 // ----------------------
@@ -20,9 +20,6 @@ divDressCode.onclick = () => {
   sectionCuenta.scrollIntoView({ behavior: "smooth" });
 };
 
-
-// IMPORTANTE!!! Cuando usen FOTO de portada, la url se cambia por "assets/img/portada.jpg"
-// IMPORTANTE!!! Cuando usen portada de catalogo, la url se cambia por "https://agendalafecha.com/invitaciones/recursos/img/montevideo/portada.jpg"
 
 // ----------------------
 
