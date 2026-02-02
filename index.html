@@ -22,25 +22,6 @@
 
 <script>
 
-	//player audio
-	
-	 	//Variable for keeping the timer instance that runs the autoplayer
-        var autoPlayerTimer;
-
-        //Start playing with the specified interval
-        function startAutoPlayer() {
-            var timeout = 3000; //ms
-            var autopause = true; //has to be false
-            //A .swiffy-slider instance with the id 'swiffy-animation'
-            var sliderElement = document.getElementById("swiffy-animation");
-
-            autoPlayerTimer = swiffyslider.autoPlay(sliderElement, timeout, autopause);
-            console.log("Player started");
-        }
-	
-    window.addEventListener('load', () => {
-		startAutoPlayer();
-    });
 
 
 	//mostrar mensaje copiado
