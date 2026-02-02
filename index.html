@@ -17,6 +17,8 @@
 <!-- Font Awesome -->
 <link href="./css/all.min.css" rel="stylesheet">
 
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 <script>
 
@@ -147,7 +149,7 @@
 	<h4>COUNTDOWN</h4>
     <!-- Contenedor de cuenta regresiva -->
                 <!-- Icono -->
-        <div class="col-md-12 columna">
+        <div class="col-md-12 columna" data-aos="zoom-out">
           <img src="./img/icono-timer.svg" alt="" class="bounce-in pulse">
        
       <p id="reloj" class="descartar" style="margin-top:25px;">"¡Hoy es el gran día!</p>
@@ -366,7 +368,21 @@
 
     <!-- Scripts Generales-->
     <!-- Listado de js con version dinamica segun modificacion de archivo -->
-<script type="text/javascript" src="./js/jquery-3.5.1.slim.min.js"></script><script type="text/javascript" src="./js/popper.min.js"></script><script type="text/javascript" src="./js/bootstrap.min.js"></script><script type="text/javascript" src="./js/parallax.min.js"></script><script type="text/javascript" src="./js/jquery.fancybox.min.js"></script><script type="text/javascript" src="./js/scripts.js"></script>
+<script type="text/javascript" src="./js/jquery-3.5.1.slim.min.js"></script>
+	<script type="text/javascript" src="./js/popper.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./js/parallax.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="./js/scripts.js"></script>
+	
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init(){
+	  duration: 1000,
+	  once: true
+  };
+</script>
 
 
 
