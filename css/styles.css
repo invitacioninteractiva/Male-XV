@@ -677,11 +677,11 @@ section.dresscode{
 section.dresscode h4 {
     text-align: center;
     margin-bottom: 20px;
-    color: white;
+    color: black;
 }
 
 section.dresscode p{
-  color: white;
+  color: black;
 }
 
 section.dresscode img.icon{
