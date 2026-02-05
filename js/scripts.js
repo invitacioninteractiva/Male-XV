@@ -50,7 +50,7 @@ var x = setInterval(function () {
   document.getElementById("seg").innerHTML = agregarCero(seconds);
   // If the count down is finished, write some text
  // if (distance <0) {
-	 if(days <= 0 && hours < 21 || (hours == 21 && minutes <= 30)){
+	 if(days <= 0 && (hours < 21 || (hours == 21 && minutes <= 30))){
 	if (distance <0) {
 		clearInterval(x);
 		document.getElementById("dias").innerHTML = agregarCero(0);
