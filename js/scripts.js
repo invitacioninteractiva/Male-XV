@@ -18,6 +18,7 @@ var divDressCode = document.querySelector(".scroll-down");
 divDressCode.onclick = () => {
   var sectionCuenta = document.getElementById("cuenta-regresiva");
   sectionCuenta.scrollIntoView({ behavior: "smooth" });
+playAudio();
 };
 
 
