@@ -16,6 +16,8 @@ $(".parallax-portada").parallax({
 
 var divDressCode = document.querySelector(".scroll-down");
 divDressCode.onclick = () => {
+  var x = document.getElementById("cuerpo");
+    x.className = "toast-success show";
   var sectionCuenta = document.getElementById("cuenta-regresiva");
   sectionCuenta.scrollIntoView({ behavior: "smooth" });
 playAudio();
