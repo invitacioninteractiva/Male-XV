@@ -13,32 +13,29 @@ $(".parallax-portada").parallax({
 // ----------------------
 
 // Portada
-/*
+
 var divDressCode = document.querySelector(".scroll-down");
 divDressCode.onclick = () => {
   var sectionCuenta = document.getElementById("cuenta-regresiva");
   sectionCuenta.scrollIntoView({ behavior: "smooth" });
 playAudio();
 };
-*/
 
+/*
 var divIngresar = document.querySelector(".ingresar");
 divIngresar.onclick = () => {
 	var x = document.getElementById("cuerpo");
     x.className = "toast-success show";
-  //var sectionCuenta = document.getElementById("cuenta-regresiva");
-  //sectionCuenta.scrollIntoView({ behavior: "smooth" });
+  var sectionCuenta = document.getElementById("cuenta-regresiva");
+  sectionCuenta.scrollIntoView({ behavior: "smooth" });
   playAudio();
   var btnIngr = document.getElementById("boton-ingresar");
   btnIngr.style.visibility = "hidden";
   var z = document.getElementById("icono-audio");
     z.className = "audio toast-success show";
-	AOS.init({
-	  duration: 1000,
-	  once: true
-  });
   
 };
+*/
 
 // ----------------------
 
