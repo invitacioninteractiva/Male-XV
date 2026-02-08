@@ -14,7 +14,7 @@ $(".parallax-portada").parallax({
 
 // Portada
 
-var divDressCode = document.querySelector(".scroll-down");
+/*var divDressCode = document.querySelector(".scroll-down");
 divDressCode.onclick = () => {
   var sectionCuenta = document.getElementById("cuenta-regresiva");
   sectionCuenta.scrollIntoView({ behavior: "smooth" });
@@ -24,22 +24,22 @@ divDressCode.onclick = () => {
   var x = document.getElementById("cuerpo");
     x.style.overflowY = "auto";
 };
+*/
 
-/*
 var divIngresar = document.querySelector(".ingresar");
 divIngresar.onclick = () => {
-	var x = document.getElementById("cuerpo");
-    x.className = "toast-success show";
+  var x = document.getElementById("cuerpo");
+    x.style.overflowY = "auto";
   var sectionCuenta = document.getElementById("cuenta-regresiva");
   sectionCuenta.scrollIntoView({ behavior: "smooth" });
   playAudio();
   var btnIngr = document.getElementById("boton-ingresar");
   btnIngr.style.visibility = "hidden";
   var z = document.getElementById("icono-audio");
-    z.className = "audio toast-success show";
+   z.className = "audio toast-success show";
   
 };
-*/
+
 
 // ----------------------
 
