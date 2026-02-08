@@ -19,6 +19,8 @@ divDressCode.onclick = () => {
   var sectionCuenta = document.getElementById("cuenta-regresiva");
   sectionCuenta.scrollIntoView({ behavior: "smooth" });
 playAudio();
+	var z = document.getElementById("icono-audio");
+    z.className = "audio toast-success show";
 };
 
 /*
