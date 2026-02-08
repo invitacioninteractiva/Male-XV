@@ -22,7 +22,7 @@ divDressCode.onclick = () => {
 	var z = document.getElementById("icono-audio");
     z.className = "audio toast-success show";	
   var x = document.getElementById("cuerpo");
-    x.style.overflow-y = "auto";
+    x.style.overflowY = "auto";
 };
 
 /*
